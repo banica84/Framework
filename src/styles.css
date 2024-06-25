@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('scaffale.jpg');
+    background-size: cover;
+    padding: 20px;
+}
+
+.Sopra {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: brown;
+    width: 100%;
+    padding: 10px; /* Add padding */
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.Ricerca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.RicercaTesto {
+    padding: 10px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.BottoneRicerca {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: brown;
+    border: none;
+}
+
+.LibroCop {
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.Hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.Risultato {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
