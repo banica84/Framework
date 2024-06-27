@@ -4,9 +4,6 @@ body, html {
     font-family: Arial, sans-serif;
     background: url('./scaffale.jpg') no-repeat center center fixed;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .login {
@@ -15,8 +12,13 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    height: 100vh;
+    min-width: 400px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -60,7 +62,7 @@ button {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    width: 109%;
+    width: 100%;
 }
 
 
@@ -71,4 +73,77 @@ button:hover {
 
 h1,h2 {
     color: brown;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+    background-size: cover;
+    padding: 20px;
+    overflow: auto;
+}
+
+.Sopra {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: brown;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.Ricerca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.RicercaTesto {
+    padding: 10px;
+    /*margin-right: 10px;*/
+    /*width: 250px;*/
+}
+
+.BottoneRicerca {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: brown;
+    border: none;
+}
+
+.LibroCop {
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.Hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.Risultato {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

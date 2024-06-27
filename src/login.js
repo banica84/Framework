@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import './stile.css';
-import { useNavigate } from 'react-router-dom';
+import React, {useState} from 'react';
+import './styles.css';
+import {useNavigate} from 'react-router-dom';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -15,37 +15,39 @@ const Login = () => {
     };
 
     return (
-        <div className='login'>
-            <div >
-                <h1>RUMI DISCOVERY</h1>
+        <div className='login-container'>
+            <div className={"form"}>
 
-            </div>
+                <div className='intro'>
+                    <h1>RUMI DISCOVERY</h1>
+                    <h2>Login</h2>
+                    <br/>
+                    <hr/>
+                </div>
 
-            <h2>Login</h2>
-
-            <form className='Login' onSubmit={iscrizione}>
-                <div className="email">
+                <form className='login' onSubmit={iscrizione}>
                     <label htmlFor="email">Email:</label>
                     <input
                         type="email"
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        placeholder={"example@gmail.com"}
                         required
                     />
-                </div>
-                <div className="pass">
+
                     <label htmlFor="password">Password:</label>
                     <input
                         type="password"
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        placeholder={"*********"}
                         required
                     />
-                </div>
-                <button className='Bottone' type="submit">Login</button>
-            </form>
+                    <button className='bottone' type="submit">Login</button>
+                </form>
+            </div>
         </div>
     );
 };

@@ -5,11 +5,11 @@ const Root = () => {
     return (
         <div>
             <nav>
-                <ul>
-                    <li>
+                <ul style={{display: "flex", gap: 69}}>
+                    <li style={{listStyle: "none" }}>
                         <NavLink to="/">Login</NavLink>
                     </li>
-                    <li>
+                    <li style={{listStyle: "none" }}>
                         <NavLink to="/home">Home</NavLink>
                     </li>
                 </ul>

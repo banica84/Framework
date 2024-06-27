@@ -1,72 +1,73 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    text-align: center;
-    background-image: url('scaffale.jpg');
+body{
+    font-family: Arial, sans-serif;
+    background: url('./scaffale.jpg') no-repeat center center fixed;
     background-size: cover;
-    padding: 20px;
 }
 
-.Sopra {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: brown;
+.login-container{
+    height: 100vh;
     width: 100%;
-    padding: 10px; /* Add padding */
-    margin-bottom: 20px; /* Add margin for spacing */
-}
-
-.Ricerca {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
 }
 
-.RicercaTesto {
-    padding: 10px;
-    margin-right: 10px;
-    width: 250px;
-}
-
-.BottoneRicerca {
-    padding: 10px;
-    cursor: pointer;
-    color: white;
-    background-color: brown;
-    border: none;
-}
-
-.LibroCop {
-    margin-bottom: 10px;
-    width: 80%;
-    max-width: 600px;
-    background-color: #fff;
+.form{
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: left;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
 }
 
-.Hr {
-    margin: 20px 0;
-    border: 0;
-    border-top: 1px solid #ccc;
+.form > * {
+    padding: 8px;
+    margin: 8px;
 }
 
-.Risultato {
-    margin-top: 20px;
+.intro {
+    color: brown;
+}
+
+.login{
+    text-align: center;
+    color: brown;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+input{
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bottone {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 60%;
+}
+
+hr{
+  border-color: brown ;
+}
+
+
+.risultato{
+
 }
