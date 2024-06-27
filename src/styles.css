@@ -68,6 +68,64 @@ hr{
 }
 
 
-.risultato{
+.container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
 
+.sopra {
+    color: brown;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+.ricerca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.bottoneRicerca{
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+    padding: 10px;
+    border-color: brown;
+}
+
+.container {
+    padding: 15px;
+}
+
+.risultato {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.libroCop{
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+h4 {
+    color: brown;
 }
