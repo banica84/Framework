@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './styles.css';
+import './stile.css';
 
 const Home = () => {
     const [search, setSearch] = useState('');
